@@ -53,6 +53,3 @@ No missing values detected.
 └── manifest.json       # Project manifest
 ```
 
----
-
-Built with [DataFlow Toolkit](https://github.com/Galliard7/dataflow-toolkit)

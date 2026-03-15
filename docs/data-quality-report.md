@@ -40,6 +40,3 @@ All columns are 100% complete — no missing values detected.
 | `interest_rate` | 12.36 | 2.01 | 3.20 | 10.99 | 12.37 | 13.68 | 20.99 |
 | `loan_paid_back` | 0.80 | 0.40 | 0 | 1 | 1 | 1 | 1 |
 
----
-
-*Generated from profiling data by DataFlow Toolkit*
