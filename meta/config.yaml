@@ -1,0 +1,10 @@
+project:
+  name: ps-s5e11-loan-payback
+  source: playground-series-s5e11
+  source_type: kaggle_competition
+  competition: playground-series-s5e11
+  created_at: '2026-03-03T03:12:21.999705+00:00'
+settings:
+  model: sonnet-4.6
+  enable_gpu: false
+  enable_internet: true

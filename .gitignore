@@ -1,0 +1,13 @@
+# Data files (tracked via sources.yaml, not committed)
+data/*.csv
+data/*.parquet
+data/*.zip
+data/*.gz
+
+# Kaggle metadata (generated per push)
+kernel-metadata.json
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

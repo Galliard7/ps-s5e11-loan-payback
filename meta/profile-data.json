@@ -1,0 +1,127 @@
+{
+  "shape": [
+    593994,
+    13
+  ],
+  "columns": [
+    "id",
+    "annual_income",
+    "debt_to_income_ratio",
+    "credit_score",
+    "loan_amount",
+    "interest_rate",
+    "gender",
+    "marital_status",
+    "education_level",
+    "employment_status",
+    "loan_purpose",
+    "grade_subgrade",
+    "loan_paid_back"
+  ],
+  "dtypes": {
+    "id": "int64",
+    "annual_income": "float64",
+    "debt_to_income_ratio": "float64",
+    "credit_score": "int64",
+    "loan_amount": "float64",
+    "interest_rate": "float64",
+    "gender": "object",
+    "marital_status": "object",
+    "education_level": "object",
+    "employment_status": "object",
+    "loan_purpose": "object",
+    "grade_subgrade": "object",
+    "loan_paid_back": "float64"
+  },
+  "missing": {},
+  "missing_pct": {},
+  "cardinality": {
+    "id": 593994,
+    "annual_income": 119728,
+    "debt_to_income_ratio": 526,
+    "credit_score": 399,
+    "loan_amount": 111570,
+    "interest_rate": 1454,
+    "gender": 3,
+    "marital_status": 4,
+    "education_level": 5,
+    "employment_status": 5,
+    "loan_purpose": 8,
+    "grade_subgrade": 30,
+    "loan_paid_back": 2
+  },
+  "numeric_stats": {
+    "count": {
+      "id": 593994.0,
+      "annual_income": 593994.0,
+      "debt_to_income_ratio": 593994.0,
+      "credit_score": 593994.0,
+      "loan_amount": 593994.0,
+      "interest_rate": 593994.0,
+      "loan_paid_back": 593994.0
+    },
+    "mean": {
+      "id": 296996.5,
+      "annual_income": 48212.202976291,
+      "debt_to_income_ratio": 0.1206958905,
+      "credit_score": 680.9160092526,
+      "loan_amount": 15020.2976285262,
+      "interest_rate": 12.3563452005,
+      "loan_paid_back": 0.7988195167
+    },
+    "std": {
+      "id": 171471.4422353233,
+      "annual_income": 26711.942078324,
+      "debt_to_income_ratio": 0.0685732585,
+      "credit_score": 55.4249559257,
+      "loan_amount": 6926.5305676033,
+      "interest_rate": 2.0089588993,
+      "loan_paid_back": 0.4008829842
+    },
+    "min": {
+      "id": 0.0,
+      "annual_income": 6002.43,
+      "debt_to_income_ratio": 0.011,
+      "credit_score": 395.0,
+      "loan_amount": 500.09,
+      "interest_rate": 3.2,
+      "loan_paid_back": 0.0
+    },
+    "25%": {
+      "id": 148498.25,
+      "annual_income": 27934.4,
+      "debt_to_income_ratio": 0.072,
+      "credit_score": 646.0,
+      "loan_amount": 10279.62,
+      "interest_rate": 10.99,
+      "loan_paid_back": 1.0
+    },
+    "50%": {
+      "id": 296996.5,
+      "annual_income": 46557.68,
+      "debt_to_income_ratio": 0.096,
+      "credit_score": 682.0,
+      "loan_amount": 15000.22,
+      "interest_rate": 12.37,
+      "loan_paid_back": 1.0
+    },
+    "75%": {
+      "id": 445494.75,
+      "annual_income": 60981.32,
+      "debt_to_income_ratio": 0.156,
+      "credit_score": 719.0,
+      "loan_amount": 18858.58,
+      "interest_rate": 13.68,
+      "loan_paid_back": 1.0
+    },
+    "max": {
+      "id": 593993.0,
+      "annual_income": 393381.74,
+      "debt_to_income_ratio": 0.627,
+      "credit_score": 849.0,
+      "loan_amount": 48959.95,
+      "interest_rate": 20.99,
+      "loan_paid_back": 1.0
+    }
+  }
+}

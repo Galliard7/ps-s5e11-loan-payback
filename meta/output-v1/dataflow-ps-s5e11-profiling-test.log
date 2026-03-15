@@ -1,0 +1,42 @@
+[{"stream_name":"stderr","time":8.607874986,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.607984223999999,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.607989204,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.607993119,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":9.403199808,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":9.403241445,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":9.403253689,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":9.403257506,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":11.82757358,"data":"Files in input directory:\n"}
+,{"stream_name":"stderr","time":12.363028713,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":12.363064264,"data":"  File \"\u003cstring\u003e\", line 1, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":12.363074542,"data":"  File \"/usr/local/lib/python3.12/dist-packages/papermill/execute.py\", line 131, in execute_notebook\n"}
+,{"stream_name":"stderr","time":12.363192355,"data":"    raise_for_execution_errors(nb, output_path)\n"}
+,{"stream_name":"stderr","time":12.363205921,"data":"  File \"/usr/local/lib/python3.12/dist-packages/papermill/execute.py\", line 251, in raise_for_execution_errors\n"}
+,{"stream_name":"stderr","time":12.363562104,"data":"    raise error\n"}
+,{"stream_name":"stderr","time":12.363823544,"data":"papermill.exceptions.PapermillExecutionError: \n"}
+,{"stream_name":"stderr","time":12.363841583,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":12.363847948,"data":"Exception encountered at \"In [2]\":\n"}
+,{"stream_name":"stderr","time":12.363853665,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":12.363859181,"data":"FileNotFoundError                         Traceback (most recent call last)\n"}
+,{"stream_name":"stderr","time":12.363864495,"data":"/tmp/ipykernel_17/465020665.py in \u003ccell line: 0\u003e()\n"}
+,{"stream_name":"stderr","time":12.363870261,"data":"      1 INPUT_DIR = \"/kaggle/input/playground-series-s5e11\"\n"}
+,{"stream_name":"stderr","time":12.363875705,"data":"      2 print(\"Files in input directory:\")\n"}
+,{"stream_name":"stderr","time":12.363881859,"data":"----\u003e 3 for f in os.listdir(INPUT_DIR):\n"}
+,{"stream_name":"stderr","time":12.363888561,"data":"      4     fpath = os.path.join(INPUT_DIR, f)\n"}
+,{"stream_name":"stderr","time":12.363895721,"data":"      5     size_mb = os.path.getsize(fpath) / 1024 / 1024\n"}
+,{"stream_name":"stderr","time":12.363901166,"data":"\n"}
+,{"stream_name":"stderr","time":12.36390618,"data":"FileNotFoundError: [Errno 2] No such file or directory: '/kaggle/input/playground-series-s5e11'\n"}
+,{"stream_name":"stderr","time":12.363911816,"data":"\n"}
+,{"stream_name":"stderr","time":15.204721123,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":15.204779661,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":15.393239195,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":15.393310565,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":16.193070125,"data":"/usr/local/lib/python3.12/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=[\"remove_papermill_header.RemovePapermillHeader\"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.\n"}
+,{"stream_name":"stderr","time":16.193116468,"data":"  warn(\n"}
+,{"stream_name":"stderr","time":16.241843068,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":16.635885047,"data":"[NbConvertApp] Writing 14078 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":19.852107899,"data":"/usr/local/lib/python3.12/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=[\"nbconvert.preprocessors.ExtractOutputPreprocessor\"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.\n"}
+,{"stream_name":"stderr","time":19.852152239,"data":"  warn(\n"}
+,{"stream_name":"stderr","time":19.882577419,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":21.025195308,"data":"[NbConvertApp] Writing 302453 bytes to __results__.html\n"}
+]

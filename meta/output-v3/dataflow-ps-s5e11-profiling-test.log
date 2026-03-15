@@ -1,0 +1,290 @@
+[{"stream_name":"stderr","time":10.91654936,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":10.916623544,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":10.916631201,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":10.916635191,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":11.831652807,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":11.831688716,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":11.831694676,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":11.831698704,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":14.842461614,"data":"Available input directories:\n"}
+,{"stream_name":"stdout","time":14.842533113,"data":"  competitions\n"}
+,{"stream_name":"stdout","time":14.870038551,"data":"Using: /kaggle/input/competitions/playground-series-s5e11\n"}
+,{"stream_name":"stdout","time":14.870133425,"data":"Files:\n"}
+,{"stream_name":"stdout","time":14.870149493,"data":"  sample_submission.csv (2.2 MB)\n"}
+,{"stream_name":"stdout","time":14.870153878,"data":"  test.csv (22.0 MB)\n"}
+,{"stream_name":"stdout","time":14.870157548,"data":"  train.csv (53.4 MB)\n"}
+,{"stream_name":"stdout","time":15.042811898,"data":"sample_submission: (254569, 2)\n"}
+,{"stream_name":"stdout","time":17.400007736,"data":"train: (593994, 13)\n"}
+,{"stream_name":"stdout","time":17.991236135,"data":"test: (254569, 12)\n"}
+,{"stream_name":"stdout","time":17.991276977,"data":"\n"}
+,{"stream_name":"stdout","time":17.991284299,"data":"Primary dataset: train (593994, 13)\n"}
+,{"stream_name":"stdout","time":18.015583929,"data":"=== SCHEMA ===\n"}
+,{"stream_name":"stdout","time":18.015624105,"data":"Rows: 593,994\n"}
+,{"stream_name":"stdout","time":18.015630444,"data":"Columns: 13\n"}
+,{"stream_name":"stdout","time":18.015635177,"data":"\n"}
+,{"stream_name":"stdout","time":18.015639617,"data":"id                        int64\n"}
+,{"stream_name":"stdout","time":18.01564424,"data":"annual_income           float64\n"}
+,{"stream_name":"stdout","time":18.015648659,"data":"debt_to_income_ratio    float64\n"}
+,{"stream_name":"stdout","time":18.015653742,"data":"credit_score              int64\n"}
+,{"stream_name":"stdout","time":18.015659074,"data":"loan_amount             float64\n"}
+,{"stream_name":"stdout","time":18.015664276,"data":"interest_rate           float64\n"}
+,{"stream_name":"stdout","time":18.015738005,"data":"gender                   object\n"}
+,{"stream_name":"stdout","time":18.015753118,"data":"marital_status           object\n"}
+,{"stream_name":"stdout","time":18.01575808,"data":"education_level          object\n"}
+,{"stream_name":"stdout","time":18.015763182,"data":"employment_status        object\n"}
+,{"stream_name":"stdout","time":18.015768384,"data":"loan_purpose             object\n"}
+,{"stream_name":"stdout","time":18.015773286,"data":"grade_subgrade           object\n"}
+,{"stream_name":"stdout","time":18.015779077,"data":"loan_paid_back          float64\n"}
+,{"stream_name":"stdout","time":18.246679939,"data":"No missing values found.\n"}
+,{"stream_name":"stdout","time":18.436001981,"data":"=== NUMERIC FEATURES ===\n"}
+,{"stream_name":"stdout","time":18.436084514,"data":"                         count           mean            std       min         25%         50%         75%         max\n"}
+,{"stream_name":"stdout","time":18.436091488,"data":"id                    593994.0  296996.500000  171471.442235     0.000  148498.250  296996.500  445494.750  593993.000\n"}
+,{"stream_name":"stdout","time":18.436094545,"data":"annual_income         593994.0   48212.202976   26711.942078  6002.430   27934.400   46557.680   60981.320  393381.740\n"}
+,{"stream_name":"stdout","time":18.436098069,"data":"debt_to_income_ratio  593994.0       0.120696       0.068573     0.011       0.072       0.096       0.156       0.627\n"}
+,{"stream_name":"stdout","time":18.436100843,"data":"credit_score          593994.0     680.916009      55.424956   395.000     646.000     682.000     719.000     849.000\n"}
+,{"stream_name":"stdout","time":18.43610347,"data":"loan_amount           593994.0   15020.297629    6926.530568   500.090   10279.620   15000.220   18858.580   48959.950\n"}
+,{"stream_name":"stdout","time":18.436106211,"data":"interest_rate         593994.0      12.356345       2.008959     3.200      10.990      12.370      13.680      20.990\n"}
+,{"stream_name":"stdout","time":18.436108946,"data":"loan_paid_back        593994.0       0.798820       0.400883     0.000       1.000       1.000       1.000       1.000\n"}
+,{"stream_name":"stdout","time":18.540047231,"data":"=== CATEGORICAL FEATURES ===\n"}
+,{"stream_name":"stdout","time":18.703071519,"data":"\n"}
+,{"stream_name":"stdout","time":18.703106322,"data":"--- gender ---\n"}
+,{"stream_name":"stdout","time":18.703111551,"data":"  Unique: 3\n"}
+,{"stream_name":"stdout","time":18.703115919,"data":"  Top values:\n"}
+,{"stream_name":"stdout","time":18.70311991,"data":"gender\n"}
+,{"stream_name":"stdout","time":18.703123711,"data":"Female    306175\n"}
+,{"stream_name":"stdout","time":18.703127528,"data":"Male      284091\n"}
+,{"stream_name":"stdout","time":18.703131472,"data":"Other       3728\n"}
+,{"stream_name":"stdout","time":18.703135523,"data":"\n"}
+,{"stream_name":"stdout","time":18.703139182,"data":"--- marital_status ---\n"}
+,{"stream_name":"stdout","time":18.703143326,"data":"  Unique: 4\n"}
+,{"stream_name":"stdout","time":18.703147028,"data":"  Top values:\n"}
+,{"stream_name":"stdout","time":18.703150784,"data":"marital_status\n"}
+,{"stream_name":"stdout","time":18.703154533,"data":"Single      288843\n"}
+,{"stream_name":"stdout","time":18.703158295,"data":"Married     277239\n"}
+,{"stream_name":"stdout","time":18.703162014,"data":"Divorced     21312\n"}
+,{"stream_name":"stdout","time":18.703165732,"data":"Widowed       6600\n"}
+,{"stream_name":"stdout","time":18.703169477,"data":"\n"}
+,{"stream_name":"stdout","time":18.703173448,"data":"--- education_level ---\n"}
+,{"stream_name":"stdout","time":18.771042494,"data":"  Unique: 5\n"}
+,{"stream_name":"stdout","time":18.7710802,"data":"  Top values:\n"}
+,{"stream_name":"stdout","time":18.77108476,"data":"education_level\n"}
+,{"stream_name":"stdout","time":18.771089128,"data":"Bachelor's     279606\n"}
+,{"stream_name":"stdout","time":18.771093465,"data":"High School    183592\n"}
+,{"stream_name":"stdout","time":18.771097668,"data":"Master's        93097\n"}
+,{"stream_name":"stdout","time":18.771101414,"data":"Other           26677\n"}
+,{"stream_name":"stdout","time":18.771105267,"data":"PhD             11022\n"}
+,{"stream_name":"stdout","time":18.771109152,"data":"\n"}
+,{"stream_name":"stdout","time":18.771119562,"data":"--- employment_status ---\n"}
+,{"stream_name":"stdout","time":18.951352622,"data":"  Unique: 5\n"}
+,{"stream_name":"stdout","time":18.951391104,"data":"  Top values:\n"}
+,{"stream_name":"stdout","time":18.951396924,"data":"employment_status\n"}
+,{"stream_name":"stdout","time":18.951401148,"data":"Employed         450645\n"}
+,{"stream_name":"stdout","time":18.951404782,"data":"Unemployed        62485\n"}
+,{"stream_name":"stdout","time":18.951409131,"data":"Self-employed     52480\n"}
+,{"stream_name":"stdout","time":18.951413258,"data":"Retired           16453\n"}
+,{"stream_name":"stdout","time":18.951416613,"data":"Student           11931\n"}
+,{"stream_name":"stdout","time":18.951419962,"data":"\n"}
+,{"stream_name":"stdout","time":18.951423522,"data":"--- loan_purpose ---\n"}
+,{"stream_name":"stdout","time":18.951427392,"data":"  Unique: 8\n"}
+,{"stream_name":"stdout","time":18.951430959,"data":"  Top values:\n"}
+,{"stream_name":"stdout","time":18.951434679,"data":"loan_purpose\n"}
+,{"stream_name":"stdout","time":18.951438466,"data":"Debt consolidation    324695\n"}
+,{"stream_name":"stdout","time":18.951442189,"data":"Other                  63874\n"}
+,{"stream_name":"stdout","time":18.951445778,"data":"Car                    58108\n"}
+,{"stream_name":"stdout","time":18.951449518,"data":"Home                   44118\n"}
+,{"stream_name":"stdout","time":18.95145365,"data":"Education              36641\n"}
+,{"stream_name":"stdout","time":18.951457301,"data":"Business               35303\n"}
+,{"stream_name":"stdout","time":18.951461273,"data":"Medical                22806\n"}
+,{"stream_name":"stdout","time":18.951465021,"data":"Vacation                8449\n"}
+,{"stream_name":"stdout","time":18.951469153,"data":"\n"}
+,{"stream_name":"stdout","time":18.951472754,"data":"--- grade_subgrade ---\n"}
+,{"stream_name":"stdout","time":18.95147661,"data":"  Unique: 30\n"}
+,{"stream_name":"stdout","time":18.951480189,"data":"  Top values:\n"}
+,{"stream_name":"stdout","time":18.951483639,"data":"grade_subgrade\n"}
+,{"stream_name":"stdout","time":18.951487241,"data":"C3    58695\n"}
+,{"stream_name":"stdout","time":18.951490913,"data":"C4    55957\n"}
+,{"stream_name":"stdout","time":18.951494525,"data":"C2    54443\n"}
+,{"stream_name":"stdout","time":18.951498171,"data":"C1    53363\n"}
+,{"stream_name":"stdout","time":18.95150161,"data":"C5    53317\n"}
+,{"stream_name":"stdout","time":18.951506076,"data":"D1    37029\n"}
+,{"stream_name":"stdout","time":18.951509797,"data":"D3    36694\n"}
+,{"stream_name":"stdout","time":18.951513286,"data":"D4    35097\n"}
+,{"stream_name":"stdout","time":18.951516864,"data":"D2    34432\n"}
+,{"stream_name":"stdout","time":18.951520869,"data":"D5    32101\n"}
+,{"stream_name":"stdout","time":19.256581578,"data":"=== CARDINALITY ===\n"}
+,{"stream_name":"stdout","time":19.256633811,"data":"id                      593994\n"}
+,{"stream_name":"stdout","time":19.256640755,"data":"annual_income           119728\n"}
+,{"stream_name":"stdout","time":19.256644751,"data":"loan_amount             111570\n"}
+,{"stream_name":"stdout","time":19.256649617,"data":"interest_rate             1454\n"}
+,{"stream_name":"stdout","time":19.256653985,"data":"debt_to_income_ratio       526\n"}
+,{"stream_name":"stdout","time":19.256657952,"data":"credit_score               399\n"}
+,{"stream_name":"stdout","time":19.256662072,"data":"grade_subgrade              30\n"}
+,{"stream_name":"stdout","time":19.256666108,"data":"loan_purpose                 8\n"}
+,{"stream_name":"stdout","time":19.256669962,"data":"education_level              5\n"}
+,{"stream_name":"stdout","time":19.256702351,"data":"employment_status            5\n"}
+,{"stream_name":"stdout","time":19.256705583,"data":"marital_status               4\n"}
+,{"stream_name":"stdout","time":19.256708335,"data":"gender                       3\n"}
+,{"stream_name":"stdout","time":19.256711044,"data":"loan_paid_back               2\n"}
+,{"stream_name":"stdout","time":19.429589075,"data":"=== TOP CORRELATIONS ===\n"}
+,{"stream_name":"stdout","time":19.429629474,"data":"interest_rate         credit_score           -0.538335\n"}
+,{"stream_name":"stdout","time":19.42963521,"data":"loan_paid_back        debt_to_income_ratio   -0.335680\n"}
+,{"stream_name":"stdout","time":19.429638932,"data":"                      credit_score            0.234560\n"}
+,{"stream_name":"stdout","time":19.429642864,"data":"                      interest_rate          -0.131184\n"}
+,{"stream_name":"stdout","time":19.429647299,"data":"credit_score          debt_to_income_ratio   -0.061617\n"}
+,{"stream_name":"stdout","time":19.429650342,"data":"interest_rate         debt_to_income_ratio    0.030316\n"}
+,{"stream_name":"stdout","time":19.429652922,"data":"loan_amount           debt_to_income_ratio   -0.008236\n"}
+,{"stream_name":"stdout","time":19.429655551,"data":"loan_paid_back        annual_income           0.006326\n"}
+,{"stream_name":"stdout","time":19.429658174,"data":"loan_amount           credit_score           -0.005761\n"}
+,{"stream_name":"stdout","time":19.429660765,"data":"loan_paid_back        loan_amount            -0.003762\n"}
+,{"stream_name":"stdout","time":19.42966319,"data":"loan_amount           annual_income          -0.003407\n"}
+,{"stream_name":"stdout","time":19.429665633,"data":"interest_rate         annual_income          -0.002507\n"}
+,{"stream_name":"stdout","time":19.429669038,"data":"loan_amount           id                     -0.001973\n"}
+,{"stream_name":"stdout","time":19.429673276,"data":"credit_score          id                      0.001772\n"}
+,{"stream_name":"stdout","time":19.429677096,"data":"debt_to_income_ratio  id                     -0.001679\n"}
+,{"stream_name":"stdout","time":19.429827727,"data":"credit_score          annual_income           0.001509\n"}
+,{"stream_name":"stdout","time":19.429832432,"data":"loan_paid_back        id                      0.001387\n"}
+,{"stream_name":"stdout","time":19.429836398,"data":"interest_rate         loan_amount            -0.001174\n"}
+,{"stream_name":"stdout","time":19.429840642,"data":"                      id                     -0.001020\n"}
+,{"stream_name":"stdout","time":19.429844938,"data":"annual_income         id                      0.000775\n"}
+,{"stream_name":"stdout","time":20.311602068,"data":"===PROFILE_JSON_START===\n"}
+,{"stream_name":"stdout","time":20.31179598,"data":"{\n"}
+,{"stream_name":"stdout","time":20.311810242,"data":"  \"shape\": [\n"}
+,{"stream_name":"stdout","time":20.311813854,"data":"    593994,\n"}
+,{"stream_name":"stdout","time":20.31181665,"data":"    13\n"}
+,{"stream_name":"stdout","time":20.311819324,"data":"  ],\n"}
+,{"stream_name":"stdout","time":20.311821828,"data":"  \"columns\": [\n"}
+,{"stream_name":"stdout","time":20.311824823,"data":"    \"id\",\n"}
+,{"stream_name":"stdout","time":20.311827741,"data":"    \"annual_income\",\n"}
+,{"stream_name":"stdout","time":20.31183061,"data":"    \"debt_to_income_ratio\",\n"}
+,{"stream_name":"stdout","time":20.311833242,"data":"    \"credit_score\",\n"}
+,{"stream_name":"stdout","time":20.311835779,"data":"    \"loan_amount\",\n"}
+,{"stream_name":"stdout","time":20.3118643,"data":"    \"interest_rate\",\n"}
+,{"stream_name":"stdout","time":20.311867294,"data":"    \"gender\",\n"}
+,{"stream_name":"stdout","time":20.311869793,"data":"    \"marital_status\",\n"}
+,{"stream_name":"stdout","time":20.311872537,"data":"    \"education_level\",\n"}
+,{"stream_name":"stdout","time":20.31187502,"data":"    \"employment_status\",\n"}
+,{"stream_name":"stdout","time":20.311877819,"data":"    \"loan_purpose\",\n"}
+,{"stream_name":"stdout","time":20.311880415,"data":"    \"grade_subgrade\",\n"}
+,{"stream_name":"stdout","time":20.31188307,"data":"    \"loan_paid_back\"\n"}
+,{"stream_name":"stdout","time":20.311885669,"data":"  ],\n"}
+,{"stream_name":"stdout","time":20.311888178,"data":"  \"dtypes\": {\n"}
+,{"stream_name":"stdout","time":20.311890851,"data":"    \"id\": \"int64\",\n"}
+,{"stream_name":"stdout","time":20.311894605,"data":"    \"annual_income\": \"float64\",\n"}
+,{"stream_name":"stdout","time":20.311898164,"data":"    \"debt_to_income_ratio\": \"float64\",\n"}
+,{"stream_name":"stdout","time":20.311901167,"data":"    \"credit_score\": \"int64\",\n"}
+,{"stream_name":"stdout","time":20.311903779,"data":"    \"loan_amount\": \"float64\",\n"}
+,{"stream_name":"stdout","time":20.31190641,"data":"    \"interest_rate\": \"float64\",\n"}
+,{"stream_name":"stdout","time":20.311908963,"data":"    \"gender\": \"object\",\n"}
+,{"stream_name":"stdout","time":20.311911569,"data":"    \"marital_status\": \"object\",\n"}
+,{"stream_name":"stdout","time":20.31191419,"data":"    \"education_level\": \"object\",\n"}
+,{"stream_name":"stdout","time":20.31191674,"data":"    \"employment_status\": \"object\",\n"}
+,{"stream_name":"stdout","time":20.311939705,"data":"    \"loan_purpose\": \"object\",\n"}
+,{"stream_name":"stdout","time":20.311952905,"data":"    \"grade_subgrade\": \"object\",\n"}
+,{"stream_name":"stdout","time":20.311957822,"data":"    \"loan_paid_back\": \"float64\"\n"}
+,{"stream_name":"stdout","time":20.311961622,"data":"  },\n"}
+,{"stream_name":"stdout","time":20.311965226,"data":"  \"missing\": {},\n"}
+,{"stream_name":"stdout","time":20.311968876999998,"data":"  \"missing_pct\": {},\n"}
+,{"stream_name":"stdout","time":20.311973221,"data":"  \"cardinality\": {\n"}
+,{"stream_name":"stdout","time":20.311976978,"data":"    \"id\": 593994,\n"}
+,{"stream_name":"stdout","time":20.311980862,"data":"    \"annual_income\": 119728,\n"}
+,{"stream_name":"stdout","time":20.311984856,"data":"    \"debt_to_income_ratio\": 526,\n"}
+,{"stream_name":"stdout","time":20.311988936,"data":"    \"credit_score\": 399,\n"}
+,{"stream_name":"stdout","time":20.311992613,"data":"    \"loan_amount\": 111570,\n"}
+,{"stream_name":"stdout","time":20.311996542,"data":"    \"interest_rate\": 1454,\n"}
+,{"stream_name":"stdout","time":20.312000458,"data":"    \"gender\": 3,\n"}
+,{"stream_name":"stdout","time":20.312004222,"data":"    \"marital_status\": 4,\n"}
+,{"stream_name":"stdout","time":20.312007691,"data":"    \"education_level\": 5,\n"}
+,{"stream_name":"stdout","time":20.312010446,"data":"    \"employment_status\": 5,\n"}
+,{"stream_name":"stdout","time":20.312013091,"data":"    \"loan_purpose\": 8,\n"}
+,{"stream_name":"stdout","time":20.312015646,"data":"    \"grade_subgrade\": 30,\n"}
+,{"stream_name":"stdout","time":20.312018318,"data":"    \"loan_paid_back\": 2\n"}
+,{"stream_name":"stdout","time":20.312020756,"data":"  },\n"}
+,{"stream_name":"stdout","time":20.312023058,"data":"  \"numeric_stats\": {\n"}
+,{"stream_name":"stdout","time":20.312025604,"data":"    \"count\": {\n"}
+,{"stream_name":"stdout","time":20.312037313,"data":"      \"id\": 593994.0,\n"}
+,{"stream_name":"stdout","time":20.312040454,"data":"      \"annual_income\": 593994.0,\n"}
+,{"stream_name":"stdout","time":20.312043155,"data":"      \"debt_to_income_ratio\": 593994.0,\n"}
+,{"stream_name":"stdout","time":20.312045774,"data":"      \"credit_score\": 593994.0,\n"}
+,{"stream_name":"stdout","time":20.312048466,"data":"      \"loan_amount\": 593994.0,\n"}
+,{"stream_name":"stdout","time":20.312050978,"data":"      \"interest_rate\": 593994.0,\n"}
+,{"stream_name":"stdout","time":20.312053463,"data":"      \"loan_paid_back\": 593994.0\n"}
+,{"stream_name":"stdout","time":20.312056849,"data":"    },\n"}
+,{"stream_name":"stdout","time":20.312060406,"data":"    \"mean\": {\n"}
+,{"stream_name":"stdout","time":20.31206445,"data":"      \"id\": 296996.5,\n"}
+,{"stream_name":"stdout","time":20.312068338,"data":"      \"annual_income\": 48212.202976291,\n"}
+,{"stream_name":"stdout","time":20.312072622,"data":"      \"debt_to_income_ratio\": 0.1206958905,\n"}
+,{"stream_name":"stdout","time":20.312077048,"data":"      \"credit_score\": 680.9160092526,\n"}
+,{"stream_name":"stdout","time":20.312081065,"data":"      \"loan_amount\": 15020.2976285262,\n"}
+,{"stream_name":"stdout","time":20.312085136,"data":"      \"interest_rate\": 12.3563452005,\n"}
+,{"stream_name":"stdout","time":20.312089286,"data":"      \"loan_paid_back\": 0.7988195167\n"}
+,{"stream_name":"stdout","time":20.312093415,"data":"    },\n"}
+,{"stream_name":"stdout","time":20.312097503,"data":"    \"std\": {\n"}
+,{"stream_name":"stdout","time":20.312101515,"data":"      \"id\": 171471.4422353233,\n"}
+,{"stream_name":"stdout","time":20.312105614,"data":"      \"annual_income\": 26711.942078324,\n"}
+,{"stream_name":"stdout","time":20.312109104,"data":"      \"debt_to_income_ratio\": 0.0685732585,\n"}
+,{"stream_name":"stdout","time":20.312111761,"data":"      \"credit_score\": 55.4249559257,\n"}
+,{"stream_name":"stdout","time":20.312114343,"data":"      \"loan_amount\": 6926.5305676033,\n"}
+,{"stream_name":"stdout","time":20.312116883,"data":"      \"interest_rate\": 2.0089588993,\n"}
+,{"stream_name":"stdout","time":20.312119578,"data":"      \"loan_paid_back\": 0.4008829842\n"}
+,{"stream_name":"stdout","time":20.312122429,"data":"    },\n"}
+,{"stream_name":"stdout","time":20.312124979,"data":"    \"min\": {\n"}
+,{"stream_name":"stdout","time":20.312127678,"data":"      \"id\": 0.0,\n"}
+,{"stream_name":"stdout","time":20.312133868,"data":"      \"annual_income\": 6002.43,\n"}
+,{"stream_name":"stdout","time":20.312136495,"data":"      \"debt_to_income_ratio\": 0.011,\n"}
+,{"stream_name":"stdout","time":20.312139036,"data":"      \"credit_score\": 395.0,\n"}
+,{"stream_name":"stdout","time":20.312141631,"data":"      \"loan_amount\": 500.09,\n"}
+,{"stream_name":"stdout","time":20.312144255,"data":"      \"interest_rate\": 3.2,\n"}
+,{"stream_name":"stdout","time":20.312147103,"data":"      \"loan_paid_back\": 0.0\n"}
+,{"stream_name":"stdout","time":20.312149756,"data":"    },\n"}
+,{"stream_name":"stdout","time":20.312152259,"data":"    \"25%\": {\n"}
+,{"stream_name":"stdout","time":20.312155854,"data":"      \"id\": 148498.25,\n"}
+,{"stream_name":"stdout","time":20.312159579,"data":"      \"annual_income\": 27934.4,\n"}
+,{"stream_name":"stdout","time":20.312163393,"data":"      \"debt_to_income_ratio\": 0.072,\n"}
+,{"stream_name":"stdout","time":20.312167598,"data":"      \"credit_score\": 646.0,\n"}
+,{"stream_name":"stdout","time":20.312171699,"data":"      \"loan_amount\": 10279.62,\n"}
+,{"stream_name":"stdout","time":20.312184871,"data":"      \"interest_rate\": 10.99,\n"}
+,{"stream_name":"stdout","time":20.3121895,"data":"      \"loan_paid_back\": 1.0\n"}
+,{"stream_name":"stdout","time":20.312193518,"data":"    },\n"}
+,{"stream_name":"stdout","time":20.312197394000002,"data":"    \"50%\": {\n"}
+,{"stream_name":"stdout","time":20.312201341,"data":"      \"id\": 296996.5,\n"}
+,{"stream_name":"stdout","time":20.312205352,"data":"      \"annual_income\": 46557.68,\n"}
+,{"stream_name":"stdout","time":20.31220919,"data":"      \"debt_to_income_ratio\": 0.096,\n"}
+,{"stream_name":"stdout","time":20.312212493,"data":"      \"credit_score\": 682.0,\n"}
+,{"stream_name":"stdout","time":20.312215281,"data":"      \"loan_amount\": 15000.22,\n"}
+,{"stream_name":"stdout","time":20.312217917,"data":"      \"interest_rate\": 12.37,\n"}
+,{"stream_name":"stdout","time":20.312220568,"data":"      \"loan_paid_back\": 1.0\n"}
+,{"stream_name":"stdout","time":20.312223227,"data":"    },\n"}
+,{"stream_name":"stdout","time":20.312225621,"data":"    \"75%\": {\n"}
+,{"stream_name":"stdout","time":20.312228139,"data":"      \"id\": 445494.75,\n"}
+,{"stream_name":"stdout","time":20.312230709,"data":"      \"annual_income\": 60981.32,\n"}
+,{"stream_name":"stdout","time":20.312233415,"data":"      \"debt_to_income_ratio\": 0.156,\n"}
+,{"stream_name":"stdout","time":20.312236201,"data":"      \"credit_score\": 719.0,\n"}
+,{"stream_name":"stdout","time":20.312238867,"data":"      \"loan_amount\": 18858.58,\n"}
+,{"stream_name":"stdout","time":20.312241487,"data":"      \"interest_rate\": 13.68,\n"}
+,{"stream_name":"stdout","time":20.312244093,"data":"      \"loan_paid_back\": 1.0\n"}
+,{"stream_name":"stdout","time":20.312247283,"data":"    },\n"}
+,{"stream_name":"stdout","time":20.312251177,"data":"    \"max\": {\n"}
+,{"stream_name":"stdout","time":20.312254958,"data":"      \"id\": 593993.0,\n"}
+,{"stream_name":"stdout","time":20.312259114,"data":"      \"annual_income\": 393381.74,\n"}
+,{"stream_name":"stdout","time":20.31226369,"data":"      \"debt_to_income_ratio\": 0.627,\n"}
+,{"stream_name":"stdout","time":20.312267992,"data":"      \"credit_score\": 849.0,\n"}
+,{"stream_name":"stdout","time":20.312272192000002,"data":"      \"loan_amount\": 48959.95,\n"}
+,{"stream_name":"stdout","time":20.312276372,"data":"      \"interest_rate\": 20.99,\n"}
+,{"stream_name":"stdout","time":20.312280345,"data":"      \"loan_paid_back\": 1.0\n"}
+,{"stream_name":"stdout","time":20.312284263,"data":"    }\n"}
+,{"stream_name":"stdout","time":20.312288156,"data":"  }\n"}
+,{"stream_name":"stdout","time":20.312301612,"data":"}\n"}
+,{"stream_name":"stdout","time":20.312305548,"data":"===PROFILE_JSON_END===\n"}
+,{"stream_name":"stderr","time":23.853150649,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":23.853200865,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":24.083964048,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":24.084002451,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":24.902962602,"data":"/usr/local/lib/python3.12/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=[\"remove_papermill_header.RemovePapermillHeader\"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.\n"}
+,{"stream_name":"stderr","time":24.903014064,"data":"  warn(\n"}
+,{"stream_name":"stderr","time":24.947493852,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":25.360662585,"data":"[NbConvertApp] Writing 37779 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":28.603653438,"data":"/usr/local/lib/python3.12/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=[\"nbconvert.preprocessors.ExtractOutputPreprocessor\"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.\n"}
+,{"stream_name":"stderr","time":28.603693897,"data":"  warn(\n"}
+,{"stream_name":"stderr","time":28.636744207,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":29.783104725,"data":"[NbConvertApp] Writing 320162 bytes to __results__.html\n"}
+]
